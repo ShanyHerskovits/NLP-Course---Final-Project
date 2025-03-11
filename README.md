@@ -1,6 +1,5 @@
 # NLP-Course---Final-Project
 Presenters: Shany Herskovits and Ofir Nahshon
-I apologize for misunderstanding your project. You're absolutely right - let me provide a corrected summary:
 
 ## Project Structure
 
