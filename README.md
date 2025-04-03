@@ -14,7 +14,7 @@ We worked with two distinct datasets and two model architectures, creating four 
    - **GPT-2 models**: For generative/classification approaches
    - **Llama-3.1-8B**: For generative approach
 
-3. **Training Combinations** (4 models total):
+3. **Training Combinations** (5 models total):
    - BERT trained on DreamBank
    - BERT trained on DREAM dataset
    - GPT-2 trained on DreamBank
