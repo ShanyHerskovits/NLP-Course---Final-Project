@@ -12,14 +12,16 @@ We worked with two distinct datasets and two model architectures, creating four 
 2. **Models**:
    - **BERT-based models**: For classification/regression approaches
    - **GPT-2 models**: For generative/classification approaches
+   - **Llama-3.1-8B**: For generative approach
 
 3. **Training Combinations** (4 models total):
    - BERT trained on DreamBank
    - BERT trained on DREAM dataset
    - GPT-2 trained on DreamBank
    - GPT-2 trained on DREAM dataset
+   - Llama-3.1-8B trained on DreamBank
 
-4. **Evaluation**: All four models were tested on the same test set of 50 dreams with interpretations
+4. **Evaluation**: All five models were tested on the same test set of 50 dreams with interpretations
 
 ## Key Results
 
@@ -32,17 +34,19 @@ Your evaluation metrics (BLEU, ROUGE, BERTScore, perplexity) showed different st
 
 2. **BERT + DREAM dataset**:
    - Classification approach for multiple-choice
-   - Moderate classification accuracy
-   - Different performance profile than DreamBank training
+   - Low classification accuracy
 
 3. **GPT-2 + DreamBank**:
-   - Generative approach with low lexical matching (BLEU ~0.006)
-   - Good semantic understanding (BERTScore ~0.84)
-   - Generated coherent interpretations
+   - Generative approach with low lexical matching (BLEU ~0.002)
+   - Good semantic understanding (BERTScore ~0.81)
 
 4. **GPT-2 + DREAM dataset**:
    - Multiple-choice selection approach
-   - Higher accuracy (~48%) than random baseline
-   - Different lexical metrics than generative approach
+   - Higher accuracy (~68%) than random baseline (33%)
+
+5. **Llama-3.1-8B + DreamBank**:
+   - Generative approach with low lexical matching (BLEU ~0.004)
+   - Good semantic understanding (BERTScore ~0.83)
+
 
 The project effectively demonstrates how different training data and model architectures lead to varying performance profiles for dream interpretation tasks, with interesting trade-offs between lexical precision and semantic understanding.
